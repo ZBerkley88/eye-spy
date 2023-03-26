@@ -1,0 +1,28 @@
+{
+  "name": "eye-spy",
+  "version": "1.0.0",
+  "description": "A case management system for private investigators",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZBerkley88/eye-spy.git"
+  },
+  "keywords": [],
+  "author": "Zachary Berkley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZBerkley88/eye-spy/issues"
+  },
+  "homepage": "https://github.com/ZBerkley88/eye-spy#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.22"
+  }
+}
